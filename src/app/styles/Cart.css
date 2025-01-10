@@ -1,0 +1,134 @@
+.cart-container {
+  padding: 20px 7%;
+}
+
+/* .cart-information-container {
+  border: solid 1px red;
+}
+
+.order-summery-container {
+  border: solid 1px black;
+} */
+
+.order-summary {
+  padding: 40px 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #f4f3f3;
+  border-radius: 12px;
+  min-width: 250px;
+}
+
+.order-summary-table,
+.order-summary-table tr,
+.order-summary-table td {
+  background-color: transparent;
+}
+
+.cart-product-container {
+  padding: 0 10px;
+}
+
+.cart-product-img-container {
+  border: solid 1px green;
+  padding: 0 !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.order-product-info-container {
+  /* border: solid 1px blue; */
+  padding-left: 20px !important;
+  padding-right: 5px !important;
+}
+
+.order-product-info-container h5 {
+  color: palevioletred;
+}
+
+.order-product-btn-container {
+  /* border: solid 1px hotpink; */
+  padding-top: 10px !important;
+}
+
+.product-add-cart_btn {
+  border-radius: 50% !important;
+}
+
+.product-cart-quantity {
+  padding: 0 7px;
+}
+
+.proceed-to-checkout {
+  margin-top: 30px;
+  background-color: rgb(255, 137, 177) !important;
+  color: #ffffff !important;
+}
+
+.proceed-to-checkout:hover {
+  background-color: rgb(255, 86, 142) !important;
+}
+
+.cart-empty-container {
+  width: 92vw;
+  position: relative;
+  left: -5vw;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.cart-empty-container .imageWrapper {
+  width: 20%;
+}
+
+/* payment option modal style */
+.payment-option-modal .rs-modal-header-close {
+  top: -40px !important;
+}
+
+/* on small devices */
+@media screen and (max-width: 600px) {
+  .order-product-info-container h5 {
+    font-size: 13px;
+  }
+
+  .order-product-info-container h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .order-product-btn-container {
+    padding-top: 1px !important;
+    padding-left: 10px !important;
+  }
+
+  .remove-cart-product {
+    position: absolute;
+    right: -12px;
+    bottom: -47px;
+    z-index: 9;
+  }
+
+  .cart-empty-container .imageWrapper {
+    width: 40%;
+  }
+
+  .order-summary {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* Tablet device */
+
+@media screen and (max-width: 770px) and (min-width: 600px) {
+  .remove-cart-product {
+    position: absolute;
+    right: 40%;
+    bottom: -50%;
+    z-index: 9;
+  }
+}

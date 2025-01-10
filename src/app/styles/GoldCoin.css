@@ -1,0 +1,184 @@
+/* .grid-gold-image,
+.grid-gold-content {
+  height: 400px;
+} */
+
+.product-carousel-button:hover {
+  background-color: rgb(239, 239, 239);
+}
+
+.gold-grid {
+  display: flex;
+}
+
+.grid-gold-image {
+  /* border: solid 1px red; */
+  height: 520px;
+}
+
+.grid-gold-content {
+  /* border: solid 1px blue; */
+  height: 520px;
+  overflow-y: scroll;
+
+  /*-ms-overflow-style: none;*/ /* IE and Edge */
+  /*scrollbar-width: none;*/ /* Firefox */
+}
+
+/* diable the scroll bar display */
+/* .grid-gold-content::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Now style the scrollbar */
+
+.grid-gold-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.grid-gold-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.grid-gold-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #f72585, #b5179e);
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+.grid-gold-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #7209b7, #560bad);
+  border: 1px solid #560bad;
+}
+
+.table-grand-total {
+  height: 60px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.price-break-table {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-break-table th,
+.price-break-table td {
+  padding: 15px 0;
+}
+
+/* product styling */
+
+.product-carousel-container {
+  padding: 10px 20px;
+}
+
+.product-carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.product-carousel-button {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.product-carousel-button:hover {
+  background: none;
+}
+
+.product-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.quantity-cart-container {
+  /* border: solid 1px aqua; */
+
+  margin-bottom: 40px;
+}
+
+.add-to-card {
+  margin-left: 30px;
+  background-color: rgb(255, 159, 191) !important;
+  font-size: 15px !important;
+  padding: 10px 16px !important;
+  color: #000000 !important;
+}
+
+.add-to-card:hover {
+  background-color: rgb(255, 122, 167) !important;
+  color: #ffffff !important;
+}
+
+.product-details {
+  margin-top: 30px;
+}
+
+.product-heading {
+  margin-bottom: 40px;
+}
+
+.quantity-cart-container .rs-btn-close {
+  top: 0 !important;
+}
+
+/* Assurance image and text */
+
+.assurance-item-container {
+  justify-content: space-evenly !important;
+  align-items: flex-start !important;
+  padding: 20px 15px;
+}
+
+.assurance-item .imageWrapper {
+  width: 150px;
+  height: 110px;
+}
+
+.assurance-item {
+  flex-direction: column;
+  width: 240px;
+}
+
+/* mobile device */
+
+@media screen and (max-width: 600px) {
+  .assurance-item .imageWrapper {
+    width: 80px;
+    height: 60px;
+  }
+
+  .assurance-item {
+    margin-right: 40px;
+  }
+
+  .assurance-item h4 {
+    font-size: 16px;
+  }
+
+  .add-to-card {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* remove scroll from the product details  container */
+  .grid-gold-content {
+    overflow: initial;
+    height: auto;
+  }
+
+  .grid-gold-image {
+    height: auto;
+  }
+
+  .product-carousel-container {
+    padding: 0 5%;
+  }
+}

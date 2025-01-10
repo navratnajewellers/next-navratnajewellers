@@ -1,0 +1,36 @@
+.main-container {
+  background-color: #ececec;
+  padding: 0 12px;
+}
+
+.inner-pad a {
+  display: block;
+  background-color: #ffffff;
+  color: #e43f7b;
+  border: 2px solid #e43f7b;
+  padding: 12px 0;
+  border-radius: 25px;
+  margin: 30px auto;
+  transition: all 1s;
+}
+
+.inner-pad a:hover {
+  background-color: #e43f7b;
+  color: black;
+}
+
+.main-container h1 {
+  color: #e43f7b;
+}
+
+.inner-pad {
+  padding: 0 20px;
+}
+
+.pad-mid {
+  padding-top: 25px;
+}
+
+.pad-large {
+  padding-top: 60px;
+}

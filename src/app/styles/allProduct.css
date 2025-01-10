@@ -1,0 +1,32 @@
+.product-item-container {
+  margin: 30px 30px;
+}
+
+.product-item-container h5 {
+  font-size: 110%;
+}
+
+.product-item-container h4 {
+  font-size: 180%;
+}
+
+.product-item-container .imageWrapper {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.product-item-container img {
+  transition: all 0.2s linear;
+}
+
+.product-item-container:hover img {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 600px) {
+  .product-item-container {
+    margin: 10px 10px;
+    width: 150px !important;
+  }
+}

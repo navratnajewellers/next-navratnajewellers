@@ -1,0 +1,15 @@
+.gold-price-container {
+  padding: 0 12%;
+}
+
+.gp-primary-text {
+  color: palevioletred;
+  margin-top: 60px;
+}
+
+.gp-secondary-text {
+  padding: 0 10px;
+  margin-top: 30px !important;
+  font-weight: 500;
+  line-height: 25px !important;
+}
