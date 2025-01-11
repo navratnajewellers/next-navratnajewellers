@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import 'rsuite/dist/rsuite.min.css';
 import { ServerProvider } from './context/server.context';
+import { ExtensionProvider } from './context/extension.context';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ServerProvider>{children}</ServerProvider>
+        <ExtensionProvider>
+          <ServerProvider>{children}</ServerProvider>
+        </ExtensionProvider>
       </body>
     </html>
   );
